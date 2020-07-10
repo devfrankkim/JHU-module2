@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,500&family=Shadows+Into+Light&display=swap");
+
+body {
+  text-align: center;
+  padding: 1rem;
+}
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Shadows Into Light", cursive;
+}
+.container {
+  position: relative;
+  border: 2px solid black;
+  margin-bottom: 2rem;
+}
+.subtitle {
+  font-size: 2.5rem;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  right: 0;
+  position: absolute;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+h1 {
+  font-size: 3.5rem;
+}
+p {
+  margin-top: 4rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+#sub1 {
+  background-color: pink;
+}
+#sub2 {
+  background-color: red;
+  color: white;
+}
+#sub3 {
+  background-color: yellow;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .container {
+    background-color: rgb(211, 255, 185);
+  }
+  .section1 {
+    float: left;
+  }
+  .section2 {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .section3 {
+    float: left;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    width: 30%;
+  }
+}
+/* Tablet  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    background-color: rgb(182, 136, 228);
+  }
+  .section1 {
+    float: left;
+  }
+  .section2 {
+    float: right;
+  }
+  .section3 {
+    clear: both;
+  }
+  .section1,
+  .section2 {
+    width: 49%;
+  }
+}
+/* Mobile  */
+@media (max-width: 767px) {
+  .container-section {
+    background-color: #999999;
+  }
+}
